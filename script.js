@@ -1,6 +1,6 @@
 const templates = [
-    { id: 1, name: "AURA", category: "ВЕСІЛЛЯ", price: "999 ГРН", img: "/general_photo.png", link: "/Project_1/index.html" },
-    { id: 2, name: "NOIR", category: "ВЕСІЛЛЯ", price: "999 ГРН", img: "general_photo_2.png", link: "/Project_2/index.html" },
+    { id: 1, name: "AURA", category: "ВЕСІЛЛЯ", price: "999 ГРН", img: "/general_photo.png", link: "aura.html" },
+    { id: 2, name: "NOIR", category: "ВЕСІЛЛЯ", price: "999 ГРН", img: "general_photo_2.png", link: "noir.html" },
     { id: 3, name: "W-G", category: "ВЕСІЛЛЯ", price: "999 ГРН", img: "general_photo_3.png", link: "w-g.html" },
     { id: 4, name: "ROMA", category: "ВЕСІЛЛЯ", price: "999 ГРН", img: "general_photo_4.png", link: "roma.html" },
     { id: 5, name: "HAPPY", category: "ВЕСІЛЛЯ", price: "999 ГРН", img: "general_photo_5.png", link: "happy.html" },

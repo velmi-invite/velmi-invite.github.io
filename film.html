@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анна & Марк — Наше Весілля</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="film.css">
+</head>
+<body>
+    
+    <!-- Cinematic Preloader -->
+    <div id="preloader" class="preloader">
+        <h2 class="preloader-text">А & М</h2>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo fade-in">А & М</div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="photo_7_6.jpg" alt="Анна та Марк" class="hero-img" id="hero-parallax">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-date fade-in delay-1">20 . 06 . 2027</p>
+                <h1 class="hero-title fade-in delay-2">Анна <span class="italic">&</span> Марк</h1>
+                <p class="hero-subtitle fade-in delay-3">Запрошуємо розділити цей день</p>
+            </div>
+        </section>
+
+        <!-- Timer Section -->
+        <section class="timer-section section-padding dark-bg">
+            <div class="container text-center reveal">
+                <p class="section-label">ЧАС ДО ЗУСТРІЧІ</p>
+                <div class="timer-grid">
+                    <div class="t-box"><span id="days">00</span><p>Днів</p></div>
+                    <div class="t-sep">:</div>
+                    <div class="t-box"><span id="hours">00</span><p>Годин</p></div>
+                    <div class="t-sep">:</div>
+                    <div class="t-box"><span id="minutes">00</span><p>Хвилин</p></div>
+                    <div class="t-sep d-mobile-none">:</div>
+                    <div class="t-box d-mobile-none"><span id="seconds">00</span><p>Секунд</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section section-padding light-bg">
+            <div class="container">
+                <div class="story-layout">
+                    <div class="story-text reveal">
+                        <h2 class="section-title">Наша Історія</h2>
+                        <p>Від однієї випадкової зустрічі до рішення йти пліч-о-пліч усе життя. Цей день — початок нашої головної спільної глави, і ми хочемо, щоб ви були поруч.</p>
+                    </div>
+                    <div class="story-images">
+                        <!-- Повернуто ефект img-reveal -->
+                        <div class="img-wrap img-1 img-reveal delay-1">
+                            <img src="photo_2_6.jpg" alt="Історія">
+                        </div>
+                        <div class="img-wrap img-2 img-reveal delay-2">
+                            <img src="photo_3_6.jpg" alt="Історія">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INCREDIBLE TIMELINE (Sticky Cards) -->
+        <section class="timeline-section section-padding light-bg">
+            <div class="container text-center reveal">
+                <h2 class="section-title mb-5">Як пройде день</h2>
+            </div>
+            
+            <div class="sticky-container">
+                <div class="sticky-card dark-card">
+                    <div class="card-content">
+                        <div class="card-time">15:00</div>
+                        <div class="card-info">
+                            <h3>Збір гостей</h3>
+                            <p>Легка музика, келихи ігристого та перші обійми. Початок нашої історії.</p>
+                        </div>
+                    </div>
+                    <div class="card-img-wrap"><img src="photo_4_6.jpg" alt="Збір"></div>
+                </div>
+                
+                <div class="sticky-card light-card">
+                    <div class="card-content">
+                        <div class="card-time">16:00</div>
+                        <div class="card-info">
+                            <h3>Церемонія</h3>
+                            <p>Найголовніші слова та обмін обіцянками під відкритим небом.</p>
+                        </div>
+                    </div>
+                    <div class="card-img-wrap"><img src="photo_5_6.jpg" alt="Церемонія"></div>
+                </div>
+                
+                <div class="sticky-card dark-card">
+                    <div class="card-content">
+                        <div class="card-time">17:30</div>
+                        <div class="card-info">
+                            <h3>Вечеря</h3>
+                            <p>Вишукані страви, теплі тости за нову сім'ю та неймовірна атмосфера.</p>
+                        </div>
+                    </div>
+                    <div class="card-img-wrap"><img src="photo_6_6.jpg" alt="Вечеря"></div>
+                </div>
+
+                <div class="sticky-card light-card">
+                    <div class="card-content">
+                        <div class="card-time">21:00</div>
+                        <div class="card-info">
+                            <h3>Вечірка</h3>
+                            <p>Світло тьмянішає, музика гучнішає. Час танцювати та святкувати на повну.</p>
+                        </div>
+                    </div>
+                    <div class="card-img-wrap"><img src="photo_7_6.jpg" alt="Вечірка"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW EDITORIAL LOCATION -->
+        <section class="location-section section-padding dark-bg">
+            <div class="container">
+                <div class="location-premium-layout">
+                    <div class="loc-left reveal">
+                        <p class="section-label mb-4">МІСЦЕ ПРОВЕДЕННЯ</p>
+                        <h2 class="loc-huge">ARTSPACE<br><span class="italic">Gallery</span></h2>
+                    </div>
+                    <div class="loc-right reveal delay-2">
+                        <div class="loc-line"></div>
+                        <p class="loc-desc">Стильний мінімалістичний простір у самому серці міста, створений для особливих моментів.</p>
+                        <p class="loc-address-text">ВУЛ. ЦЕНТРАЛЬНА, 12, М. КИЇВ</p>
+                        <a href="#" class="premium-btn">ВІДКРИТИ МАРШРУТ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DRESS CODE (Flex Accordion) -->
+        <section class="dresscode-section section-padding light-bg">
+            <div class="container text-center reveal mb-5">
+                <h2 class="section-title">Дрес-код</h2>
+                <p class="dc-subtitle">Елегантний монохром. Оберіть один із цих відтінків для вашого образу.</p>
+            </div>
+            
+            <div class="accordion-container reveal delay-1">
+                <div class="accordion-panel" style="background-color: #1A1A1A;">
+                    <div class="panel-content"><h3 style="color: #FFF;">ЧОРНИЙ</h3></div>
+                </div>
+                <div class="accordion-panel" style="background-color: #E8E6E1;">
+                    <div class="panel-content"><h3 style="color: #1A1A1A;">ПЕРЛИННИЙ</h3></div>
+                </div>
+                <div class="accordion-panel" style="background-color: #4A4A4A;">
+                    <div class="panel-content"><h3 style="color: #FFF;">ГРАФІТ</h3></div>
+                </div>
+                <div class="accordion-panel" style="background-color: #B5B0A1;">
+                    <div class="panel-content"><h3 style="color: #1A1A1A;">БЕЖ</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Form (FIXED LAYOUT) -->
+        <section class="rsvp-section section-padding dark-bg">
+            <div class="container rsvp-container reveal">
+                
+                <!-- Step 1: Main Info -->
+                <div id="rsvp-step-1" class="rsvp-step active">
+                    <h2 class="section-title text-center mb-2">Присутність</h2>
+                    <p class="section-label text-center mb-5">ПІДТВЕРДІТЬ ДО 1 ТРАВНЯ</p>
+                    
+                    <form id="form-step-1" class="premium-form" novalidate>
+                        <div class="input-group">
+                            <input type="text" id="guest-name" name="guest-name" required placeholder=" ">
+                            <label>Ваше ім'я та прізвище</label>
+                            <span class="error-msg">Будь ласка, введіть ваше ім'я</span>
+                        </div>
+                        
+                        <div class="radio-group mt-4">
+                            <label class="radio-box">
+                                <input type="radio" name="attendance" value="yes" required>
+                                <span>Я буду</span>
+                            </label>
+                            <label class="radio-box">
+                                <input type="radio" name="attendance" value="no" required>
+                                <span>Не зможу</span>
+                            </label>
+                        </div>
+                        <p class="error-msg text-center mt-2" id="attendance-error" style="display: none;">Оберіть, чи будете ви присутні</p>
+
+                        <div id="extra-guests" class="hidden-content">
+                            <div class="input-group mt-4">
+                                <select id="guest-count">
+                                    <option value="" disabled selected>З ким ви будете?</option>
+                                    <option value="alone">Буду сам/сама</option>
+                                    <option value="partner">З парою (+1)</option>
+                                    <option value="family">З сім'єю</option>
+                                </select>
+                            </div>
+                            <div class="input-group mt-4" id="partner-name-group" style="display: none;">
+                                <input type="text" id="partner-name" placeholder=" ">
+                                <label>Ім'я вашої пари / сім'ї</label>
+                                <span class="error-msg" id="partner-error">Введіть ім'я</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="premium-btn full-width mt-5">ПРОДОВЖИТИ</button>
+                    </form>
+                </div>
+
+                <!-- Step 2: Drinks & Food -->
+                <div id="rsvp-step-2" class="rsvp-step">
+                    <h2 class="section-title text-center mb-2">Деталі</h2>
+                    <p class="section-label text-center mb-5">ЩОБ ВЕЧІР БУВ ІДЕАЛЬНИМ</p>
+                    
+                    <form id="form-step-2" class="premium-form">
+                        <h3 class="form-heading">Що ви будете пити?</h3>
+                        <div class="checkbox-group mb-5">
+                            <label class="check-box"><input type="checkbox" value="Ігристе"><span>Ігристе</span></label>
+                            <label class="check-box"><input type="checkbox" value="Біле вино"><span>Біле вино</span></label>
+                            <label class="check-box"><input type="checkbox" value="Червоне"><span>Червоне вино</span></label>
+                            <label class="check-box"><input type="checkbox" value="Міцне"><span>Міцний алкоголь</span></label>
+                            <label class="check-box"><input type="checkbox" value="Коктейлі"><span>Коктейлі</span></label>
+                            <label class="check-box"><input type="checkbox" value="Б/А"><span>Безалкогольне</span></label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="text" id="allergies" placeholder=" ">
+                            <label>Алергії або особливості харчування</label>
+                        </div>
+                        
+                        <button type="submit" class="premium-btn full-width mt-5">НАДІСЛАТИ ВІДПОВІДЬ</button>
+                    </form>
+                </div>
+
+                <!-- Step 3: Success -->
+                <div id="rsvp-success" class="rsvp-step text-center">
+                    <h2 class="section-title mb-3">Дякуємо!</h2>
+                    <p id="success-msg" style="color: #C2B6A3; font-size: 1.1rem; font-weight: 300;">Вашу відповідь збережено.<br>З нетерпінням чекаємо на зустріч!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer dark-bg text-center reveal">
+            <h2 class="logo mb-2">А & М</h2>
+            <p class="section-label">20 . 06 . 2027</p>
+        </footer>
+    </main>
+
+    <script src="film.js"></script>
+</body>
+</html>

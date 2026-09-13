@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ігор & Людмила | Весільне запрошення</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600&family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="happy.css">
+</head>
+<body>
+
+    <!-- Ambient background layer -->
+    <div id="ambient-world"></div>
+
+    <!-- Fixed Music Control -->
+    <button id="music-btn" class="music-off" aria-label="Увімкнути музику">
+        <div class="music-ring"></div>
+        <div class="music-icon">
+            <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="1" x2="1" y2="23"/></svg>
+        </div>
+    </button>
+    <!-- ВАЖЛИВО: Музика тепер завантажується локально. Покладіть файл music.mp3 у цю ж папку -->
+    <audio id="bg-music" src="music.mp3" loop preload="auto"></audio>
+
+    <!-- Main Experience (Без конверта) -->
+    <main id="main-experience">
+        
+        <!-- Hero Card -->
+        <section class="card-section hero-card" id="hero">
+            <div class="card-content hero-content">
+                <span class="accent-type hero-accent">Ми одружуємось</span>
+                <h1 class="display-type">ІГОР<br><span class="ampersand">&</span><br>ЛЮДМИЛА</h1>
+                <div class="date-badge">
+                    <span class="date-type">20.06.2027</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Card -->
+        <section class="card-section color-card butter-bg" id="countdown">
+            <div class="kinetic-countdown">
+                <div class="count-block"><span id="cd-days">000</span><small>ДНІВ</small></div>
+                <div class="count-divider">:</div>
+                <div class="count-block"><span id="cd-hours">00</span><small>ГОД</small></div>
+                <div class="count-divider">:</div>
+                <div class="count-block"><span id="cd-mins">00</span><small>ХВ</small></div>
+                <div class="count-divider">:</div>
+                <div class="count-block"><span id="cd-secs">00</span><small>СЕК</small></div>
+            </div>
+            <p class="accent-type center">до нашого дня</p>
+        </section>
+
+        <!-- The Celebration Album -->
+        <section class="scrapbook-section" id="photos">
+            <div class="photo-frame p1">
+                <img src="photo_1_5.jpg" alt="Фото 1" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80'">
+            </div>
+            <div class="photo-frame p2 circle-mask">
+                <img src="photo_2_5.jpg" alt="Фото 2" onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80'">
+            </div>
+            <div class="photo-frame p3 arch-mask">
+                <img src="photo_3_5.jpg" alt="Фото 3" onerror="this.src='https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80'">
+            </div>
+        </section>
+
+        <!-- The Day Ahead -->
+        <section class="card-section schedule-card" id="schedule">
+            <h2 class="section-title">Програма дня</h2>
+            <div class="timeline-wrapper">
+                <svg class="timeline-path" viewBox="0 0 100 500" preserveAspectRatio="none">
+                    <path d="M 50,0 C 80,100 20,200 50,300 C 80,400 50,500 50,500" fill="none" stroke="var(--cherry)" stroke-width="2" stroke-dasharray="4 4"/>
+                </svg>
+                <div class="timeline-item"><div class="time">15:00</div><div class="event">ЦЕРЕМОНІЯ</div></div>
+                <div class="timeline-item"><div class="time">16:30</div><div class="event">ВЕЛКОМ ДРІНК</div></div>
+                <div class="timeline-item"><div class="time">18:00</div><div class="event">СВЯТКОВА ВЕЧЕРЯ</div></div>
+                <div class="timeline-item"><div class="time">20:00</div><div class="event">ПЕРШИЙ ТАНЕЦЬ</div></div>
+                <div class="timeline-item"><div class="time">21:00</div><div class="event">ВЕЧІРКА</div></div>
+                <div class="timeline-item"><div class="time">00:00</div><div class="event">AFTER PARTY</div></div>
+            </div>
+        </section>
+
+        <!-- Photo Breakout -->
+        <section class="scrapbook-section" id="photos-2">
+            <div class="photo-frame p4 full-bleed">
+                <img src="photo_4_5.jpg" alt="Фото 4" onerror="this.src='https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80'">
+            </div>
+        </section>
+
+        <!-- Dress Code -->
+        <section class="card-section color-card powder-bg" id="dress-code">
+            <h2 class="section-title">Дрес-код</h2>
+            <p class="modern-text">FORMAL / СВЯТКОВИЙ ЕЛЕГАНТНИЙ</p>
+            <div class="swatches">
+                <div class="swatch" style="background: #000;" data-name="ЧОРНИЙ"></div>
+                <div class="swatch" style="background: var(--cherry);" data-name="ВИШНЕВИЙ"></div>
+                <div class="swatch" style="background: var(--cobalt);" data-name="СИНІЙ"></div>
+                <div class="swatch" style="background: var(--cream);" data-name="КРЕМОВИЙ"></div>
+            </div>
+        </section>
+
+        <!-- Venue -->
+        <section class="card-section venue-card cobalt-bg" id="venue">
+            <div class="venue-inner border-decor-light">
+                <h2 class="section-title text-cream" style="font-size: 2.2rem; margin-bottom: 5px;">Локація</h2>
+                <div class="venue-divider"></div>
+                <p class="venue-name">РЕСТОРАН "GRAND ESTATE"</p>
+                <p class="venue-address">вул. Святкова, 123<br>м. Ужгород</p>
+                <a href="#" class="btn-link outline-cream">ПРОКЛАСТИ МАРШРУТ &rarr;</a>
+            </div>
+        </section>
+        
+        <!-- More Photos -->
+        <section class="scrapbook-section" id="photos-3">
+            <div class="photo-frame p5">
+                <img src="photo_5_5.jpg" alt="Фото 5" onerror="this.src='https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=600&q=80'">
+            </div>
+            <div class="photo-frame p6 offset-mask">
+                <img src="photo_6_5.jpg" alt="Фото 6" onerror="this.src='https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80'">
+            </div>
+            <div class="photo-frame p7 paper-tear">
+                <img src="photo_7_5.jpg" alt="Фото 7" onerror="this.src='https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?auto=format&fit=crop&w=600&q=80'">
+            </div>
+        </section>
+
+        <!-- RSVP Form -->
+        <section class="card-section rsvp-card" id="rsvp">
+            <form id="rsvp-form" novalidate>
+                <!-- Крок 1: Відвідування -->
+                <div class="rsvp-step active" id="step-1">
+                    <h2 class="section-title" style="font-size: 2.2rem;">Чи розділите ви цей день з нами?</h2>
+                    <div class="rsvp-choices">
+                        <button type="button" class="choice-btn" data-attend="yes">ТАК, З РАДІСТЮ</button>
+                        <button type="button" class="choice-btn outline" data-attend="no">НА ЖАЛЬ, НЕ ЗМОЖУ</button>
+                    </div>
+                </div>
+
+                <!-- Крок 2: Імена -->
+                <div class="rsvp-step" id="step-2">
+                    <h2 class="section-title">Ваші дані</h2>
+                    <div class="input-group">
+                        <label for="guest-name">ВАШЕ ІМ'Я ТА ПРІЗВИЩЕ</label>
+                        <input type="text" id="guest-name" name="guest-name" required placeholder="Павло Фонтош">
+                        <span class="error-msg">БУДЬ ЛАСКА, ВВЕДІТЬ СВОЄ ІМ'Я.</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>З КИМ ВИ БУДЕТЕ?</label>
+                        <select id="guest-count" name="guest-count">
+                            <option value="just_me">БУДУ ОДИН / ОДНА</option>
+                            <option value="partner">З ПАРОЮ</option>
+                            <option value="family">З СІМ'ЄЮ</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group hidden" id="extra-names-group">
+                        <label for="extra-names">ІМЕНА ГОСТЕЙ (ЧЕРЕЗ КОМУ)</label>
+                        <input type="text" id="extra-names" name="extra-names" placeholder="напр. Олена, Максим">
+                        <span class="error-msg">БУДЬ ЛАСКА, ВВЕДІТЬ ІМЕНА ГОСТЕЙ.</span>
+                    </div>
+                    
+                    <button type="button" class="submit-btn" id="next-btn" disabled>НАСТУПНИЙ КРОК</button>
+                </div>
+
+                <!-- Крок 3: Напої -->
+                <div class="rsvp-step" id="step-3">
+                    <h2 class="section-title" style="font-size: 2rem;">Що будете пити?</h2>
+                    <div class="drink-options" style="margin-bottom: 30px;">
+                        <button type="button" class="drink-btn">ШАМПАНСЬКЕ</button>
+                        <button type="button" class="drink-btn">БІЛЕ ВИНО</button>
+                        <button type="button" class="drink-btn">ЧЕРВОНЕ ВИНО</button>
+                        <button type="button" class="drink-btn">КОКТЕЙЛІ</button>
+                        <button type="button" class="drink-btn">ВІСКІ</button>
+                        <button type="button" class="drink-btn">ПИВО</button>
+                        <button type="button" class="drink-btn">БЕЗАЛКОГОЛЬНІ</button>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submit-rsvp">ВІДПРАВИТИ RSVP</button>
+                </div>
+                
+                <!-- Фінал RSVP -->
+                <div class="rsvp-step success-msg" id="rsvp-success">
+                    <div class="success-burst"></div>
+                    <h2 class="section-title">ДО ЗУСТРІЧІ НА СВЯТІ!</h2>
+                </div>
+            </form>
+        </section>
+
+        <!-- Final Wrap -->
+        <section class="card-section final-card" id="final">
+            <div class="final-content">
+                <p class="modern-text">ЧЕКАЄМО<br>НА<br>ЗУСТРІЧ.</p>
+                <h3 class="display-type small">АННА & ОЛЕКСАНДР</h3>
+                <p class="date-type">20.06.2027</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="happy.js"></script>
+</body>
+</html>

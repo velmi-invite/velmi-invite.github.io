@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>А & О — Цифровий Арт-Досвід</title>
+    <meta name="description" content="Cinematic Wedding Experience. 20.06.2027">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="aura.css">
+</head>
+<body>
+
+    <!-- Ambient Glow Overlay -->
+    <div class="ambient-glow"></div>
+
+    <!-- Minimalist Audio Player -->
+    <div class="audio-toggle" id="audio-toggle">
+        <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="1" x2="1" y2="23"></line>
+        </svg>
+        <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <path d="M11 5 L6 9 H2 V15 H6 L11 19 Z"></path>
+            <path class="eq-1" d="M15.5 10.5 V13.5"></path>
+            <path class="eq-2" d="M19 8 V16"></path>
+            <path class="eq-3" d="M22.5 10 V14"></path>
+        </svg>
+    </div>
+    <audio id="bg-audio" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <h2 class="loader-names">А & О</h2>
+            <div class="loader-date">20 / 06 / 27</div>
+            <div class="loader-progress">0%</div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- 1. CINEMATIC HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="photo_7_1.jpg" alt="Hero Image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-date gs-reveal">
+                    <span>20</span><span>06</span><span>27</span>
+                </div>
+                <h1 class="hero-title gs-reveal">
+                    <span class="name">АННА</span>
+                    <span class="ampersand">&</span>
+                    <span class="name">ОЛЕКСІЙ</span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- 2. STORYTELLING -->
+        <section class="story" id="story">
+            <div class="story-container">
+                <h2 class="editorial-text huge-text gs-fade-up">ОДНА ІСТОРІЯ.<br>ДВОЄ ЛЮДЕЙ.<br>ОДИН ДЕНЬ.</h2>
+                <div class="story-paragraph">
+                    <p class="gs-fade-up">Усе почалося в затишних куточках старого міста.</p>
+                    <p class="gs-fade-up">Випадкова зустріч, що перетворилася на безкінечні розмови.</p>
+                    <p class="gs-fade-up">Роки спільної тиші та гучного сміху.</p>
+                    <p class="gs-fade-up">Тепер ми запрошуємо вас стати частиною нашого наступного розділу.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. NEW ELEGANT GALLERY (EDITORIAL STACK) -->
+        <section class="gallery" id="gallery">
+            <h2 class="section-title text-center gs-fade-up">МОМЕНТИ</h2>
+            <div class="editorial-stack">
+                <div class="stack-item gs-fade-up">
+                    <div class="image-wrapper">
+                        <img src="photo_3_1.jpg" alt="Зустріч">
+                    </div>
+                    <div class="stack-caption">2019 / ЗУСТРІЧ</div>
+                </div>
+                <div class="stack-item gs-fade-up">
+                    <div class="image-wrapper">
+                        <img src="photo_4_1.jpg" alt="Перша подорож">
+                    </div>
+                    <div class="stack-caption">2021 / ПЕРША ПОДОРОЖ</div>
+                </div>
+                <div class="stack-item gs-fade-up">
+                    <div class="image-wrapper">
+                        <img src="photo_5_1.jpg" alt="Те саме питання">
+                    </div>
+                    <div class="stack-caption">2023 / ТЕ САМЕ ПИТАННЯ</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. EDITORIAL SCHEDULE -->
+        <section class="details" id="details">
+            <div class="schedule-container">
+                <h2 class="section-title gs-fade-up">РОЗКЛАД ДНЯ</h2>
+                <div class="schedule">
+                    <div class="schedule-item gs-slide-right">
+                        <div class="time">15:00</div>
+                        <div class="event-details">
+                            <h3>ЦЕРЕМОНІЯ</h3>
+                            <p>Заміський комплекс, Лісова зона</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item gs-slide-right">
+                        <div class="time">17:00</div>
+                        <div class="event-details">
+                            <h3>АПЕРИТИВ</h3>
+                            <p>Сад & Жива музика</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item gs-slide-right">
+                        <div class="time">20:00</div>
+                        <div class="event-details">
+                            <h3>ВЕЧЕРЯ</h3>
+                            <p>Свічки & Теплі слова</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item gs-slide-right">
+                        <div class="time">23:00</div>
+                        <div class="event-details">
+                            <h3>AFTER PARTY</h3>
+                            <p>До самого світанку</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. VENUE -->
+        <section class="venue" id="venue">
+            <div class="venue-bg">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop" alt="Venue">
+                <div class="venue-overlay"></div>
+            </div>
+            <div class="venue-content gs-fade-up">
+                <h2 class="section-title text-center" style="border: none;">МІСЦЕ ПРОВЕДЕННЯ</h2>
+                <h3 class="huge-text text-center">CHÂTEAU<br>DE FORÊT</h3>
+                <p class="venue-address text-center">ЗАМІСЬКИЙ КОМПЛЕКС «ЛІСОВА ЗОНА»<br>ВУЛ. ЛІСОВА, 1, КИЇВСЬКА ОБЛАСТЬ</p>
+                <div class="text-center">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Київська+область+Лісова" target="_blank" class="btn btn-map">ПОКАЗАТИ НА КАРТІ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. DRESS CODE -->
+        <section class="dress-code gs-fade-up">
+            <div class="dc-header">
+                <h2>DRESS CODE</h2>
+                <p>BLACK TIE / ТЕМНА ЕЛЕГАНТНІСТЬ</p>
+            </div>
+            <div class="color-strips">
+                <div class="strip" style="background-color: #0d0d0d;"><span>MIDNIGHT</span></div>
+                <div class="strip" style="background-color: #2b0c11;"><span>BURGUNDY</span></div>
+                <div class="strip" style="background-color: #f4f0ec;"><span style="color: #0a0a0a;">IVORY</span></div>
+                <div class="strip" style="background-color: #333333;"><span>CHARCOAL</span></div>
+            </div>
+        </section>
+
+        <!-- 7. IMMERSIVE RSVP -->
+        <section class="rsvp-section" id="rsvp">
+            <div class="rsvp-container gs-scale-up">
+                <div class="rsvp-step active" id="step-1">
+                    <h2 class="huge-text">РОЗДІЛИТЕ<br>ЦЕЙ ДЕНЬ<br>З НАМИ?</h2>
+                    <div class="rsvp-actions">
+                        <button class="btn btn-yes" onclick="nextStep(2)">ТАК</button>
+                        <button class="btn btn-no" onclick="alert('НАМ ВАС НЕ ВИСТАЧАТИМЕ.')">НІ</button>
+                    </div>
+                </div>
+                
+                <div class="rsvp-step" id="step-2">
+                    <h2>ВАШІ ДЕТАЛІ</h2>
+                    <input type="text" placeholder="ВАШЕ ІМ'Я ТА ПРІЗВИЩЕ" class="custom-input" id="main-guest-name">
+                    <div class="error-msg" id="name-error">Будь ласка, введіть ваше ім'я</div>
+
+                    <div class="plus-one-toggle">
+                        <p>ВИ БУДЕТЕ ОДНІ ЧИ З СІМ'ЄЮ?</p>
+                        <button class="btn-small" onclick="toggleFamily(false)">ТАК, ОДИН / ОДНА</button>
+                        <button class="btn-small" onclick="toggleFamily(true)">БУДУ З ПАРОЮ АБО СІМ'ЄЮ</button>
+                    </div>
+                    <textarea placeholder="ВКАЖІТЬ ІМЕНА ПАРТНЕРА АБО ЧЛЕНІВ СІМ'Ї" class="custom-input hidden" id="family-names" rows="2"></textarea>
+                    
+                    <button class="btn btn-next" onclick="nextStep(3)">ДАЛІ</button>
+                </div>
+
+                <div class="rsvp-step" id="step-3">
+                    <h2>БАР</h2>
+                    <p>ЩО БУДЕТЕ ПИТИ?</p>
+                    <div class="drink-options">
+                        <input type="checkbox" id="drink-1"><label for="drink-1">ШАМПАНСЬКЕ</label>
+                        <input type="checkbox" id="drink-2"><label for="drink-2">ВИНО</label>
+                        <input type="checkbox" id="drink-3"><label for="drink-3">ВІСКІ</label>
+                        <input type="checkbox" id="drink-4"><label for="drink-4">КОКТЕЙЛІ</label>
+                        <input type="checkbox" id="drink-5"><label for="drink-5">БЕЗАЛКОГОЛЬНЕ</label>
+                    </div>
+                    <button class="btn btn-submit" onclick="nextStep(4)">ВІДПРАВИТИ</button>
+                </div>
+
+                <div class="rsvp-step" id="step-4">
+                    <h2 class="huge-text">ВАШ ВИБІР<br>ЗБЕРЕЖЕНО.</h2>
+                    <p>ЧЕКАЄМО НА ВАС.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FINAL SCENE + COUNTDOWN -->
+        <footer class="final-scene">
+            <div class="final-scene-content gs-fade-up">
+                <h2 class="huge-text">ДО ЗУСТРІЧІ</h2>
+                
+                <div class="countdown" id="countdown">
+                    <div class="cd-item"><span id="days">00</span><p>ДНІВ</p></div>
+                    <div class="cd-item"><span id="hours">00</span><p>ГОДИН</p></div>
+                    <div class="cd-item"><span id="minutes">00</span><p>ХВИЛИН</p></div>
+                    <div class="cd-item"><span id="seconds">00</span><p>СЕКУНД</p></div>
+                </div>
+
+                <div class="final-names">АННА & ОЛЕКСІЙ</div>
+                <div class="final-date">20.06.2027</div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="aura.js"></script>
+</body>
+</html>

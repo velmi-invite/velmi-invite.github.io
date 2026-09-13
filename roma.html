@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Андрій та Вікторія | Святкування</title>
+    <meta name="description" content="Запрошуємо вас на нашу весільну вечірку. 20.06.2027">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Андрій та Вікторія | 20.06.2027">
+    <meta property="og:description" content="З нетерпінням чекаємо на святкування з вами.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@400;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="roma.css">
+</head>
+<body>
+
+    <!-- Екран завантаження -->
+    <div id="loader">
+        <h2 class="mono-text">ЗАВАНТАЖЕННЯ СВЯТА</h2>
+        <div class="loader-track">
+            <div id="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Мінімалістична кнопка музики (SVG) -->
+    <button id="music-btn" aria-label="Керування музикою">
+        <svg id="icon-sound-on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+        <svg id="icon-sound-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="1" x2="1" y2="23"></line>
+        </svg>
+    </button>
+    <audio id="bg-audio" loop preload="auto">
+        <source src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=chill-abstract-intention-11084.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Головний екран (Hero) -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="photo_3_4.jpg" alt="Анна та Алекс" id="hero-img" fetchpriority="high">
+        </div>
+        <div class="hero-content">
+            <div class="hero-date huge-text">
+                <div class="d-part">20</div>
+                <div class="d-part display-italic accent-color">06</div>
+                <div class="d-part">27</div>
+            </div>
+            <h1 class="hero-names" id="hero-names">АНДРІЙ & ВІКТОРІЯ</h1>
+        </div>
+    </section>
+
+    <!-- Відлік часу -->
+    <section class="countdown-wrap fade-in-section">
+        <div class="mono-text" style="margin-bottom: 2rem; color: var(--cherry);">ВІДЛІК ДО НАШОГО ДНЯ</div>
+        <div id="countdown-timer">
+            <div class="cd-item"><span class="cd-num" id="cd-days">000</span><span class="cd-label">ДНІВ</span></div>
+            <div class="cd-item"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">ГОДИН</span></div>
+            <div class="cd-item"><span class="cd-num" id="cd-minutes">00</span><span class="cd-label">ХВИЛИН</span></div>
+            <div class="cd-item"><span class="cd-num" id="cd-seconds">00</span><span class="cd-label">СЕКУНД</span></div>
+        </div>
+    </section>
+
+    <!-- Історія -->
+    <section class="story fade-in-section">
+        <span class="story-word">УСЕ</span>
+        <span class="story-word">ПОЧАЛОСЯ</span>
+        <span class="story-word">З</span>
+        <span class="story-word accent-color">ДВОХ.</span>
+        <span class="story-word">А</span>
+        <span class="story-word">ПЕРЕТВОРИЛОСЯ</span>
+        <span class="story-word">НА</span>
+        <span class="story-word display-italic">СВЯТО.</span>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery-container fade-in-section">
+        <div class="gallery-header">
+            <h2 class="section-title" style="font-size: 2.5rem;">ГАЛЕРЕЯ</h2>
+        </div>
+        <div class="gallery-track">
+            <div class="gallery-item"><div class="img-wrapper"><img src="photo_2_4.jpg" alt="Gallery" loading="lazy" decoding="async"></div><div class="gallery-counter">01 / 06</div></div>
+            <div class="gallery-item"><div class="img-wrapper"><img src="photo_3_4.jpg" alt="Gallery" loading="lazy" decoding="async"></div><div class="gallery-counter">02 / 06</div></div>
+            <div class="gallery-item"><div class="img-wrapper"><img src="photo_4_4.jpg" alt="Gallery" loading="lazy" decoding="async"></div><div class="gallery-counter">03 / 06</div></div>
+            <div class="gallery-item"><div class="img-wrapper"><img src="photo_5_4.jpg" alt="Gallery" loading="lazy" decoding="async"></div><div class="gallery-counter">04 / 06</div></div>
+            <div class="gallery-item"><div class="img-wrapper"><img src="photo_6_4.jpg" alt="Gallery" loading="lazy" decoding="async"></div><div class="gallery-counter">05 / 06</div></div>
+            <div class="gallery-item"><div class="img-wrapper"><img src="photo_7_4.jpg" alt="Gallery" loading="lazy" decoding="async"></div><div class="gallery-counter">06 / 06</div></div>
+        </div>
+    </section>
+
+    <!-- Розклад дня -->
+    <section class="timeline fade-in-section">
+        <h2 class="section-title">ЦЕЙ ДЕНЬ</h2>
+        <div class="mono-text" style="margin-bottom: 3rem; color: var(--cherry);">20 ЧЕРВНЯ 2027</div>
+        
+        <div class="tl-item">
+            <div class="tl-time">15:00</div>
+            <div class="tl-content">
+                <div class="tl-title">ЦЕРЕМОНІЯ</div>
+                <p class="mono-text">Сльози щастя, обітниці та початок назавжди.</p>
+            </div>
+        </div>
+        <div class="tl-item">
+            <div class="tl-time">16:30</div>
+            <div class="tl-content">
+                <div class="tl-title">КОКТЕЙЛІ</div>
+                <p class="mono-text">Дзвін келихів та захід сонця.</p>
+            </div>
+        </div>
+        <div class="tl-item">
+            <div class="tl-time">18:00</div>
+            <div class="tl-content">
+                <div class="tl-title">ВЕЧЕРЯ</div>
+                <p class="mono-text">Вишукана вечеря під зірками.</p>
+            </div>
+        </div>
+        <div class="tl-item">
+            <div class="tl-time">20:00</div>
+            <div class="tl-content">
+                <div class="tl-title">ПЕРШИЙ ТАНЕЦЬ</div>
+            </div>
+        </div>
+        <div class="tl-item">
+            <div class="tl-time">21:00</div>
+            <div class="tl-content">
+                <div class="tl-title accent-color">ВЕЧІРКА</div>
+                <p class="mono-text">Жодних правил, тільки танці.</p>
+            </div>
+        </div>
+        <div class="tl-item">
+            <div class="tl-time">00:00</div>
+            <div class="tl-content">
+                <div class="tl-title">AFTER PARTY</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Локація -->
+    <section class="venue fade-in-section">
+        <h2 class="section-title">ЛОКАЦІЯ</h2>
+        <h3 style="font-size: 2rem;">VILLA ASTORIA</h3>
+        <p class="mono-text" style="margin-top: 1rem;">Озеро Комо, Італія</p>
+        <div class="venue-img-box">
+            <img src="photo_1_4.jpg" alt="Локація" loading="lazy" decoding="async">
+        </div>
+        <div class="map-container">
+            <div class="map-marker"></div>
+        </div>
+        <a href="https://maps.google.com" target="_blank" class="btn-primary">ПРОКЛАСТИ МАРШРУТ</a>
+    </section>
+
+    <!-- Дрес-код -->
+    <section class="dresscode fade-in-section">
+        <h2 class="section-title">ДРЕС-КОД</h2>
+        <p class="mono-text">BLACK TIE OPTIONAL. ВРАЖАЙТЕ.</p>
+        <div class="dc-grid">
+            <div class="dc-block dc-1"><h4>ФОРМАЛЬНИЙ</h4></div>
+            <div class="dc-block dc-2"><h4>ВИШНЕВІ АКЦЕНТИ</h4></div>
+            <div class="dc-block dc-3"><h4>ЕЛЕГАНТНИЙ</h4></div>
+            <div class="dc-block dc-4"><h4>КОБАЛЬТОВИЙ ШИК</h4></div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp fade-in-section" id="rsvp-section">
+        <h2 class="section-title" style="color: var(--cherry);">RSVP</h2>
+        
+        <form id="rsvp-form" onsubmit="event.preventDefault(); submitRSVP();">
+            <!-- Крок 1: Присутність -->
+            <div class="form-group active" id="step-1">
+                <h3 style="margin-bottom: 2rem;">ВИ БУДЕТЕ З НАМИ?</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="attendance" value="yes" class="radio-input" onchange="nextStep(1, 'yes')">
+                        <div class="radio-label">ТАК, З РАДІСТЮ БУДУ</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="attendance" value="no" class="radio-input" onchange="nextStep(1, 'no')">
+                        <div class="radio-label">НІ, СВЯТКУВАТИМУ НА ВІДСТАНІ</div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Крок 2: Ім'я -->
+            <div class="form-group" id="step-2">
+                <h3 style="margin-bottom: 1rem;">ВАШЕ ІМ'Я</h3>
+                <input type="text" id="guest-name" class="input-text" placeholder="Ім'я та Прізвище">
+                <div class="error-msg" id="name-error">БУДЬ ЛАСКА, ВВЕДІТЬ ВАШЕ ІМ'Я.</div>
+                <button type="button" class="btn-submit" onclick="validateNameAndProceed()">ДАЛІ</button>
+            </div>
+
+            <!-- Крок 3: Супутники -->
+            <div class="form-group" id="step-3">
+                <h3 style="margin-bottom: 2rem;">З КИМ ВИ ПРИЙДЕТЕ?</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="companions" value="alone" class="radio-input" onchange="handleCompanionSelection('alone')">
+                        <div class="radio-label">БУДУ САМ/А</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="companions" value="partner" class="radio-input" onchange="handleCompanionSelection('partner')">
+                        <div class="radio-label">З ПАРТНЕРОМ</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="companions" value="family" class="radio-input" onchange="handleCompanionSelection('family')">
+                        <div class="radio-label">З СІМ'ЄЮ</div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Крок 4: Імена супутників -->
+            <div class="form-group" id="step-4">
+                <h3 style="margin-bottom: 1rem;">ІМЕНА ГОСТЕЙ</h3>
+                <p class="mono-text" style="margin-bottom: 1rem; opacity: 0.7;">Введіть імена через кому (наприклад: Анна, Марк)</p>
+                <input type="text" id="companion-names" class="input-text" placeholder="Імена...">
+                <div class="error-msg" id="companion-error">БУДЬ ЛАСКА, ДОДАЙТЕ ІМЕНА ГОСТЕЙ.</div>
+                <button type="button" class="btn-submit" onclick="validateCompanionsAndProceed()">ДАЛІ</button>
+            </div>
+
+            <!-- Крок 5: Вибір алкоголю -->
+            <div class="form-group" id="step-drinks">
+                <h3 style="margin-bottom: 1rem;">ЯКИЙ НАПІЙ БУДЕТЕ ПИТИ?</h3>
+                <p class="mono-text" style="margin-bottom: 2rem; opacity: 0.7;">Можна обрати декілька варіантів для вас та ваших гостей</p>
+                <div class="drink-grid">
+                    <button type="button" class="drink-btn">ШАМПАНСЬКЕ</button>
+                    <button type="button" class="drink-btn">ЧЕРВОНЕ ВИНО</button>
+                    <button type="button" class="drink-btn">БІЛЕ ВИНО</button>
+                    <button type="button" class="drink-btn">КОКТЕЙЛІ</button>
+                    <button type="button" class="drink-btn">ВІСКІ</button>
+                    <button type="button" class="drink-btn">БЕЗАЛКОГОЛЬНІ</button>
+                </div>
+                <button type="button" class="btn-submit" onclick="submitRSVP()">ПІДТВЕРДИТИ ПРИСУТНІСТЬ</button>
+            </div>
+
+            <!-- Успіх -->
+            <div class="form-group" id="step-success" style="text-align: center;">
+                <h2 class="huge-text" style="font-size: clamp(2.5rem, 8vw, 4rem); color: var(--cherry);">ВІДПОВІДЬ ПРИЙНЯТО.</h2>
+                <p class="mono-text" style="margin-top: 2rem;">Побачимось на танцполі.</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Підвал -->
+    <footer class="footer fade-in-section">
+        <h1>ДАВАЙТЕ<br>СВЯТКУВАТИ.</h1>
+        <div class="mono-text">АННА & АЛЕКС</div>
+        <div class="mono-text" style="margin-top: 1rem;">20.06.2027</div>
+    </footer>
+
+    <!-- Оптимізовані Scripts (Завантажуються асинхронно/в кінці) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="roma.js"></script>
+</body>
+</html>

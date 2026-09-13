@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VÉLMI — Студія цифрових запрошень</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#" class="logo text-ui">VÉLMI</a>
+        
+        <!-- Меню для десктопу з плавним скролом до каталогу -->
+        <nav class="header-nav text-ui">
+            <a href="#" onclick="filterCatalogue(event, 'ВЕСІЛЛЯ')">ВЕСІЛЛЯ</a>
+            <a href="#" onclick="filterCatalogue(event, 'GENDER PARTY')">GENDER PARTY</a>
+            <a href="#" onclick="filterCatalogue(event, 'ДЕНЬ НАРОДЖЕННЯ')">ДЕНЬ НАРОДЖЕННЯ</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1 class="scroll-reveal">
+            ЦИФРОВІ ЗАПРОШЕННЯ,<br>
+            СТВОРЕНІ, ЩОБ<br>
+            ЗАПАМ'ЯТАТИСЯ.
+        </h1>
+        <p class="scroll-reveal">Преміальні цифрові запрошення для найважливіших подій у вашому житті. Естетика, що поєднує сучасний дизайн та інтерактивний досвід.</p>
+    </section>
+
+    <!-- Filters -->
+    <div class="filter-container scroll-reveal">
+        <div class="filters text-ui" id="filters">
+            <button class="filter-btn active" data-filter="УСІ">УСІ</button>
+            <button class="filter-btn" data-filter="ВЕСІЛЛЯ">ВЕСІЛЛЯ</button>
+            <button class="filter-btn" data-filter="GENDER PARTY">GENDER PARTY</button>
+            <button class="filter-btn" data-filter="ДЕНЬ НАРОДЖЕННЯ">ДЕНЬ НАРОДЖЕННЯ</button>
+        </div>
+    </div>
+
+    <!-- Catalogue Container -->
+    <main class="catalogue" id="catalogue"></main>
+
+    <!-- About Section -->
+    <section class="section-padding about-section">
+        <h2 class="scroll-reveal">МИ СТВОРЮЄМО ЗАПРОШЕННЯ, ЯКІ ПАМ'ЯТАЮТЬ.</h2>
+        <p class="scroll-reveal">VÉLMI створює сучасні цифрові запрошення для весіль, днів народження, гендер-паті та інших особливих подій. Кожен дизайн розроблений з увагою до деталей, арт-дирекшну та відчувається як повноцінний цифровий досвід — а не просто картинка в інтернеті.</p>
+    </section>
+
+    <!-- Why VÉLMI -->
+    <section class="section-padding why-section">
+        <div class="why-grid">
+            <div class="why-item scroll-reveal">
+                <h3 class="text-ui">ДИЗАЙН ПЕРЕДУСІМ</h3>
+                <p>Кожне запрошення починається з глибокого візуального концепту, натхненного світом моди та архітектури.</p>
+            </div>
+            <div class="why-item scroll-reveal">
+                <h3 class="text-ui">MOBILE FIRST</h3>
+                <p>Створено для того, як люди насправді взаємодіють з інформацією сьогодні — ідеальний вигляд на будь-якому смартфоні.</p>
+            </div>
+            <div class="why-item scroll-reveal">
+                <h3 class="text-ui">ІНТЕРАКТИВНІСТЬ</h3>
+                <p>Плавна анімація, рух та мікро-взаємодії роблять кожне запрошення живим і преміальним.</p>
+            </div>
+            <div class="why-item scroll-reveal">
+                <h3 class="text-ui">ПЕРСОНАЛІЗАЦІЯ</h3>
+                <p>Ексклюзивні готові дизайни, які легко адаптуються під унікальну атмосферу вашого свята.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-section scroll-reveal">
+        <span class="accent-star" style="display:block; margin-bottom: 20px;">✦</span>
+        <h2 class="text-ui">ОДНЕ ПРЕКРАСНЕ ЗАПРОШЕННЯ</h2>
+        <div class="pricing-price">999 ГРН</div>
+        
+        <div class="premium-features-list">
+            <div class="feature-row scroll-reveal">
+                <span class="feature-name">ГОТОВИЙ ШАБЛОН</span>
+                <span class="feature-desc">Вишуканий веб-сайт замість звичайної картинки</span>
+            </div>
+            <div class="feature-row scroll-reveal">
+                <span class="feature-name">MOBILE FIRST ДОСВІД</span>
+                <span class="feature-desc">Ідеальна адаптація під екрани смартфонів</span>
+            </div>
+            <div class="feature-row scroll-reveal">
+                <span class="feature-name">ПЕРСОНАЛІЗАЦІЯ</span>
+                <span class="feature-desc">Ваші фотографії, текст, кольори та таймінг</span>
+            </div>
+            <div class="feature-row scroll-reveal">
+                <span class="feature-name">ІНТЕРАКТИВНИЙ ФУНКЦІОНАЛ</span>
+                <span class="feature-desc">Форма RSVP, таймер та опитування гостей</span>
+            </div>
+        </div>
+
+        <a href="#catalogue" class="cta-btn text-ui scroll-reveal">ОБРАТИ ДИЗАЙН</a>
+    </section>
+
+    <!-- Marquee Banner -->
+    <div class="marquee-section">
+        <div class="marquee-content text-ui">
+            <span>VÉLMI СТУДІЯ ✦ ПРЕМІАЛЬНИЙ ДИЗАЙН ✦ ЦИФРОВІ ЗАПРОШЕННЯ ✦ ВЕСІЛЛЯ ✦ GENDER PARTY ✦ ДЕНЬ НАРОДЖЕННЯ ✦ VÉLMI СТУДІЯ ✦ ПРЕМІАЛЬНИЙ ДИЗАЙН ✦ ЦИФРОВІ ЗАПРОШЕННЯ ✦ ВЕСІЛЛЯ ✦ GENDER PARTY ✦ ДЕНЬ НАРОДЖЕННЯ ✦</span>
+            <span>VÉLMI СТУДІЯ ✦ ПРЕМІАЛЬНИЙ ДИЗАЙН ✦ ЦИФРОВІ ЗАПРОШЕННЯ ✦ ВЕСІЛЛЯ ✦ GENDER PARTY ✦ ДЕНЬ НАРОДЖЕННЯ ✦ VÉLMI СТУДІЯ ✦ ПРЕМІАЛЬНИЙ ДИЗАЙН ✦ ЦИФРОВІ ЗАПРОШЕННЯ ✦ ВЕСІЛЛЯ ✦ GENDER PARTY ✦ ДЕНЬ НАРОДЖЕННЯ ✦</span>
+        </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <section class="bottom-cta">
+        <h2 class="scroll-reveal">ЗНАЙШЛИ СВОЄ?<br>ДАВАЙТЕ ЗРОБИМО ЙОГО ВАШИМ.</h2>
+        <a href="https://instagram.com/velmi.invite" target="_blank" class="cta-btn text-ui scroll-reveal">НАПИСАТИ В INSTAGRAM</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-ui">
+        <div>
+            <div class="logo" style="margin-bottom: 10px;">VÉLMI</div>
+            <div style="color: var(--text-secondary); font-size: 10px;">Студія цифрових запрошень. © 2026</div>
+        </div>
+        <div class="footer-links">
+            <a href="https://instagram.com/velmi.invite" target="_blank" class="hover-effect" style="overflow: hidden;">INSTAGRAM</a>
+            <a href="#" target="_blank" class="hover-effect" style="overflow: hidden;">TIKTOK</a>
+        </div>
+    </footer>
+
+    <!-- Підключення скриптів -->
+    <script src="script.js"></script>
+</body>
+</html>
